@@ -1,0 +1,156 @@
+<svg width="100%" height="100%" viewBox="0 0 1872 1404" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <linearGradient id="wardleyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="rgb(236,237,243)"></stop>
+            <stop offset="30%" stop-color="rgb(255,255,255)"></stop>
+            <stop offset="70%" stop-color="rgb(255,255,255)"></stop>
+            <stop offset="100%" stop-color="rgb(236,237,243)"></stop>
+        </linearGradient>
+        <marker id="arrow" refX="15" refY="0" markerWidth="12" markerHeight="12" viewBox="0 -5 10 10">
+            <path d="M0,-5L10,0L0,5" fill="rgb(255,0,0)"></path>
+        </marker>
+        <marker id="graphArrow" refX="9" refY="0" markerWidth="12" markerHeight="12" viewBox="0 -5 10 10">
+            <path d="M0,-5L10,0L0,5" fill="rgb(0,0,0)"></path>
+        </marker>
+    </defs>
+    <rect x="30" y="50" width="1812" height="1304" style="fill:url(#wardleyGradient)"></rect>
+    <g transform=" translate(30,1354) rotate(270)">
+        <line x1="0" y1="0" x2="1304" y2="0" stroke-width="1" marker-end="url(#graphArrow)" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <line x1="0" y1="315" x2="1304" y2="315" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <line x1="0" y1="724" x2="1304" y2="724" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <line x1="0" y1="1268" x2="1304" y2="1268" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="start">
+            <tspan x="5" dy="-10">Invisible</tspan>
+        </text>
+        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="end">
+            <tspan x="1299" dy="-10">Visible</tspan>
+        </text>
+        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="middle">
+            <tspan x="652" dy="-10">Value Chain</tspan>
+        </text>
+    </g>
+    <line x1="30" y1="1354" x2="1842" y2="1354" marker-end="url(#graphArrow)" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="30" dy="1369">🧪 Genesis</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="345" dy="1369">⚒️  Custom-Built</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="754" dy="1369">🛒 Product
+(+rental)</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="1298" dy="1369">⛽ Commodity
+(+utility)</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="end">
+        <tspan x="1842" dy="1369">Evolution</tspan>
+    </text>
+    <style><![CDATA[
+.evolutionEdge {
+	stroke-dasharray: 7;
+	stroke-dashoffset: 7;
+	animation: dash 3s linear forwards infinite;
+}
+
+
+.visibility0 {
+	opacity: 0.8;
+}
+
+
+
+.invisibility0 {
+	opacity: NaN;
+}
+
+
+@keyframes dash {
+	from {
+		stroke-dashoffset: 100;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+.componentText {
+  background: transparent;
+  color: #fff;
+  resize: none;
+  border: 0 none;
+  width: 100%;
+  font-size: 0.8em;
+  outline: none;
+  height: 100%;
+  position: absolute;
+}
+
+]]></style>
+    <script id="SVGScript">var g = new Map();
+var allLinks = new Array(); 
+
+allLinks.push();
+
+
+const max = 9
+function toggleLink(clicked_id)
+{
+	if (g.has(clicked_id)) {
+		g.get(clicked_id).forEach(element => {
+			var style = document.getElementById(element).style.display;
+			if(style === "none")
+				document.getElementById(element).style.display = "block";
+			else
+				document.getElementById(element).style.display = "none";
+
+		});
+	}
+}
+function toggleLinks() {
+	allLinks.forEach(element => {
+		var style = document.getElementById(element).style.display;
+		if(style === "none") {
+			document.getElementById(element).style.display = "block";
+		} else {
+			document.getElementById(element).style.display = "none";
+		}
+	});
+}
+
+var allVisibilities = new Map();
+var allInVisibilities = new Map();
+function setVisibility() {
+	
+	allVisibilities.set('invisibility0',document.querySelectorAll('.visibility0'))
+	allInVisibilities.set('visibility0',document.querySelectorAll('.invisibility0'))
+}
+
+var visible = true
+
+function toggleVisibility() {
+	components = allVisibilities
+	if (visible) {
+		components = allInVisibilities
+		visible = false
+	} else {
+		visible = true
+	}
+	components.forEach(function(value, key) {
+		if (value.length === 0) {
+			setVisibility();
+		}
+		value.forEach(element => {
+			element.classList.toggle(key)	
+		});
+	})
+}
+
+
+setVisibility();
+</script>
+    <text font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="middle">
+        <tspan x="936" dy="20"></tspan>
+    </text>
+    <g id="layer_0"></g>
+</svg>

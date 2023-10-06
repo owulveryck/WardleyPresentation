@@ -1,5 +1,10 @@
 01_STRATEGY.png
 blank.png
-blank.png
-01_STRATEGY.png
-01_STRATEGY.png
+cheat_sheet.png
+emptymap_full.png
+emptymap_without_space.png
+espace_exploratoires_industriels.png
+espaces_commentes.png
+evolution.png
+evolution_withspace.png
+test.png
