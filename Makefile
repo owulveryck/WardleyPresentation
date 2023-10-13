@@ -52,7 +52,7 @@ $(OUTPUT): $(IMAGE_LIST_FILE) $(BACKGROUND_IMAGE) svg2png
 		counter=$$((counter + 1)); \
 	done < $(IMAGE_LIST_FILE)
 	convert -units PixelsPerInch -density 150x150 $(TEMP_DIR)/* $@
-	rm -rf $(TEMP_DIR)
+#	rm -rf $(TEMP_DIR)
 
 svg2png: $(PNG_FILES)
 

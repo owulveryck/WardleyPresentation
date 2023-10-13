@@ -1,29 +1,30 @@
-front.png|alimentation avec les illustrations
-blank.png
-blank.png
-lost.png
-burgess_sketch.png
-lost.png
-suntzu.png
-blank.png
-blank.png
-blank.png
-blank.png
-01_STRATEGY.png
-blank.png
-blank.png
-blank.png
-blank.png
-emptymap_full.png
-emptymap_without_space.png
-espace_exploratoires_industriels.png
-evolution.png
-evolution_withspace.png
-emptymap_full.png
-emptymap_without_space.png
-espace_exploratoires_industriels.png
-espaces_commentes.png
-cheat_sheet.png
-SWOT.png
-collaboration_map.png
-qrcode.png
+front.png|Ma carte de Wardley me dit de ne pas faire de k8s
+blank.png|OCTO, Il y a 6 ans
+blank.png|Fail!!! 
+lost.png|être perdu
+burgess_sketch.png|Ecumer les conférences pour l'inspiration
+lost.png|Simon Wardley
+suntzu.png|La stratégie
+blank.png|Comprende le prochain coup, les deux pourquoi
+blank.png|Sun Tzu: les 5 piliers
+blank.png|Comprendre le paysage: OODA
+01_STRATEGY.png|Le paysage est un élément central
+blank.png|perdu: ajoutons un repère
+blank.png|perdu: ajoutons du mouvement
+blank.png|Outil 1: chaine de valeur
+blank.png|Outil 2: Un composant ne gagne pas de valeur: il évolue
+blank.png|>supply et ^demande... ^ubiquité et >certitude
+evolution.png|avec les labels
+cheat_sheet.png|Charactéristiques
+emptymap_full.png|La carte complète
+01_STRATEGY.png|Comprendre le climat
+climat.png|Les charactéristiques changent
+espace_exploratoires_industriels.png|L'espace d'une carte
+espaces_commentes.png|Une carte est un canevas
+cncf_landscape.png|Le paysage CNCF
+cncf_map.png|Une carte?
+emptymap_full.png|Kubernetes...
+blank.png|Conclusion
+SWOT.png|On challenge pas la personne...
+collaboration_map.png|On challenge la carte
+qrcode.png|Merci
