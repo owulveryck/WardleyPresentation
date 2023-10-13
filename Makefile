@@ -41,11 +41,11 @@ $(BACKGROUND_IMAGE):
 $(OUTPUT): $(IMAGE_LIST_FILE) $(BACKGROUND_IMAGE) svg2png
 	mkdir -p $(TEMP_DIR)
 	counter=1; \
-	while IFS=| read -r img title; do \
+	while IFS='|' read -r img title; do \
 		temp_img="$(TEMP_DIR)/temp_$$(printf "%03d" $$counter)_$$(basename $$img)"; \
 		output_file="$(TEMP_DIR)/$$(printf "%03d" $$counter)_$$(basename $$img)"; \
 		convert "$$img" -contrast -resize 1752x1284 -background none -gravity center -extent 1752x1284 -colorspace Gray -colors 8 "$$temp_img"; \
-		convert -background none -fill white -gravity Center -pointsize 20 label:"$$img" label.png; \
+		convert -background none -fill white -gravity Center -pointsize 20 label:"$$title" label.png; \
 		convert $(BACKGROUND_IMAGE) label.png -gravity North -geometry +0+20 -composite slide.png; \
 		composite -gravity center "$$temp_img" slide.png "$$output_file"; \
 		rm "$$temp_img" label.png slide.png; \
